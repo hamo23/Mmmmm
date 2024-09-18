@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>محل تدليك رجالي مع حمام مغربي</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f8ff;
@@ -22,6 +22,7 @@
         header h1 {
             margin: 0;
             font-size: 2.5em;
+            font-family: 'Roboto', sans-serif;
         }
         .container {
             width: 80%;
@@ -37,6 +38,7 @@
         }
         .main h2 {
             color: #004d40;
+            font-family: 'Roboto', sans-serif;
         }
         .main img {
             max-width: 100%;
@@ -52,6 +54,24 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 30%;
+            text-align: center;
+        }
+        .service img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
         .contact {
             background: #004d40;
@@ -78,19 +98,28 @@
         <div class="main">
             <h2>أهلاً وسهلاً بكم في محلنا</h2>
             <p>نحن نقدم خدمات تدليك رجالي متميزة مع حمام مغربي لتعزيز الراحة والاسترخاء. فريقنا المحترف يستخدم أحدث الأساليب والمنتجات لضمان تجربة فريدة ومريحة.</p>
-            <img src="massage-image.jpg" alt="تدليك رجالي">
             <a href="https://example.com/booking" class="button">احجز الآن</a>
         </div>
 
         <div class="main">
             <h2>خدماتنا</h2>
-            <ul>
-                <li>تدليك استرخائي</li>
-                <li>تدليك عميق</li>
-                <li>حمام مغربي</li>
-                <li>علاج بالزيوت العطرية</li>
-            </ul>
-            <img src="hamam-image.jpg" alt="حمام مغربي">
+            <div class="services">
+                <div class="service">
+                    <h3>التدليك بالاحجار</h3>
+                    <img src="hot-stone-massage.jpg" alt="التدليك بالاحجار">
+                    <p>استمتع بجلسة تدليك باستخدام الأحجار الساخنة لتحسين الدورة الدموية وتخفيف التوتر.</p>
+                </div>
+                <div class="service">
+                    <h3>حمام مغربي</h3>
+                    <img src="moroccan-bath.jpg" alt="حمام مغربي">
+                    <p>استرخ في حمام مغربي تقليدي يعزز تنقية البشرة وتجديد الحيوية.</p>
+                </div>
+                <div class="service">
+                    <h3>بدكير و منكير</h3>
+                    <img src="manicure-pedicure.jpg" alt="بدكير و منكير">
+                    <p>دلل نفسك بجلسة بدكير و منكير متكاملة للحصول على يدين وقدمين بمظهر رائع.</p>
+                </div>
+            </div>
         </div>
     </div>
 
